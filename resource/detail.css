@@ -31,7 +31,10 @@
 }
 
 .comment{
+    border-radius: 5px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* 제목 하단 축제 대표 이미지 박스*/
@@ -140,6 +143,28 @@
 
 .lodgment-price{
     color: #e85a71;
+}
+
+/* 의견 부분 */
+
+.comment-box{
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.comment-sub-box{
+    width: 90%;
+    display: flex;
+}
+
+.comment-sub-box-title{
+    width:20%;
+}
+
+.comment-sub-box-text{
+    text-align: start;
+    width: 80%;
 }
 
 /* 오른쪽 하단 버튼 */
