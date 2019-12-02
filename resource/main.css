@@ -75,7 +75,7 @@
             margin: 10px 0;
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 978px) {
 
             .container{
                 width: 100%;

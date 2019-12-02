@@ -11,6 +11,7 @@
 
     <style>
 
+        /* 좌측 상단 메뉴 설정 부분*/
         ul{
             padding: 0;
             list-style: none;
@@ -39,13 +40,17 @@
             color: white;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-
+            box-shadow: 3px 3px 5px black;
             transform: translateY(-10rem);
             transition: all 0.3s ease-in-out;
         }
 
         .drop-sub>li{
             padding: 8px 0;
+        }
+
+        .drop-sub>li>a:hover{
+            color: #e85a71;
         }
 
         .drop-main:hover .drop-sub{
@@ -55,6 +60,53 @@
             transition-delay: 0s, 0s, 0.3s;
         }
 
+        /* 리스트 부분 */
+        .list{
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+        .list-item{
+            border: 2px solid #454552;
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .list-item-img{
+            background-image: url(./resource/poster/winter.jpg);
+            background-size: 100%;
+            border-radius: 5px;
+            width: 200px;
+            height: 130px;
+            margin: 10px;
+        }
+
+        .list-item-textarea{
+            margin: 10px;
+            width: 600px;
+            text-align: start;
+        }
+
+        .list-item-title{
+            font-size: 200%;
+        }
+
+        .list-item-title:hover{
+            color: #e85a71;
+        }
+
+        .list-item-term{
+            font-size: 120%;
+            color: #4ea1d3;
+        }
+
+        .list-item-location{
+            font-size: 120%;
+        }
     </style>
 
 </head>
@@ -85,6 +137,49 @@
         
         <p class="main-subject">모꼬지</p>
         <p class="sub">축제 행사의 순 우리말 모꼬지 : 오늘은 어디 갈까?</p>
+        
+        <div class="list">
+            <div class="list-item">
+                <div class="list-item-img"></div>
+                <div class="list-item-textarea">
+                    <div class="list-item-title"><a href="#">산정호수 윈터 페스타 2020</a></div>
+                    <div class="list-item-term">2019.11.11 ~ 2019.12.12</div>
+                    <div class="list-item-location">위치 : 한국경영원 인재개발원</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="list-item-img"></div>
+                <div class="list-item-textarea">
+                        <div class="list-item-title"><a href="#">산정호수 윈터 페스타 2020</a></div>
+                    <div class="list-item-term">2019.11.11 ~ 2019.12.12</div>
+                    <div class="list-item-location">위치 : 한국경영원 인재개발원</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="list-item-img"></div>
+                <div class="list-item-textarea">
+                        <div class="list-item-title"><a href="#">산정호수 윈터 페스타 2020</a></div>
+                    <div class="list-item-term">2019.11.11 ~ 2019.12.12</div>
+                    <div class="list-item-location">위치 : 한국경영원 인재개발원</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="list-item-img"></div>
+                <div class="list-item-textarea">
+                        <div class="list-item-title"><a href="#">산정호수 윈터 페스타 2020</a></div>
+                    <div class="list-item-term">2019.11.11 ~ 2019.12.12</div>
+                    <div class="list-item-location">위치 : 한국경영원 인재개발원</div>
+                </div>
+            </div>
+             <div class="list-item">
+                <div class="list-item-img"></div>
+                <div class="list-item-textarea">
+                        <div class="list-item-title"><a href="#">산정호수 윈터 페스타 2020</a></div>
+                    <div class="list-item-term">2019.11.11 ~ 2019.12.12</div>
+                    <div class="list-item-location">위치 : 한국경영원 인재개발원</div>
+                </div>
+            </div>
+        </div>
 
     </div>
     

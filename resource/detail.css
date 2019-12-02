@@ -32,6 +32,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#login{
+    margin: 16px 0;
 }
 
 /* 제목 하단 축제 대표 이미지 박스*/
