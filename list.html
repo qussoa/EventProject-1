@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href=".\resource\main.css">
+
+    <style>
+
+        ul{
+            list-style: none;
+        }
+
+        .top-menu{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-menu-box{
+            padding: 0;
+        }
+
+        .sub-menu-box{
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
+            transform: translateY(-2rem);
+            transition: all 0.3s ease-in-out, visibility 0s linear 0.3s, z-index 0s linear 0.05s;
+        }
+
+        #menu:hover .sub-menu-box{
+            visibility: visible;
+            opacity: 1;
+            z-index: 10;
+            transform: translateY(0);
+            transition-delay: 0s, 0s, 0.3s;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+       <div class="top-menu">
+        
+        <ul class="main-menu-box">
+            <li>
+                <a id="menu" href="#"><i class="fas fa-bars fa-2x"></i></a>
+                <ul class="sub-menu-box">
+                    <li><a href="#">서울시</a></li>
+                    <li><a href="#">경기도</a></li>
+                    <li><a href="#">강원도</a></li>
+                    <li><a href="#">충청남도</a></li>
+                    <li><a href="#">충청북도</a></li>
+                    <li><a href="#">전라남도</a></li>
+                    <li><a href="#">전라북도</a></li>
+                    <li><a href="#">경상남도</a></li>
+                    <li><a href="#">경상북도</a></li>
+                    <li><a href="#">제주도</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a id="login" href="#"><i class="fas fa-sign-in-alt fa-2x"></i></a>
+       </div>
+        
+        <p class="main-subject">모꼬지</p>
+        <p class="sub">축제 행사의 순 우리말 모꼬지 : 오늘은 어디 갈까?</p>
+
+    </div>
+    
+</body>
+</html>
