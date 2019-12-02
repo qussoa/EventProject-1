@@ -69,8 +69,10 @@
             font-size: 130%;
         }
 
-        #login, #menu{
-            margin: 10px;
+        #login{
+            width: 100px;
+            height: 30px;
+            margin: 10px 0;
         }
 
         @media screen and (max-width: 800px) {

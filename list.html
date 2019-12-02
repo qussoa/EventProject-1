@@ -12,6 +12,7 @@
     <style>
 
         ul{
+            padding: 0;
             list-style: none;
         }
 
@@ -20,28 +21,39 @@
             justify-content: space-between;
         }
 
-        .main-menu-box{
-            padding: 0;
+        .drop-main{
+            text-align: center;
+            position: relative;
+            width: 100px;
+            height: 30px;
         }
 
-        .sub-menu-box{
-            position: absolute;
-            width: 100%;
-            opacity: 0;
+        .drop-sub{
             visibility: hidden;
-            z-index: -1;
-            transform: translateY(-2rem);
-            transition: all 0.3s ease-in-out, visibility 0s linear 0.3s, z-index 0s linear 0.05s;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #454552;
+            color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            transform: translateY(-10rem);
+            transition: all 0.3s ease-in-out;
         }
 
-        #menu:hover .sub-menu-box{
+        .drop-sub>li{
+            padding: 8px 0;
+        }
+
+        .drop-main:hover .drop-sub{
             visibility: visible;
             opacity: 1;
-            z-index: 10;
-            transform: translateY(0);
+            transform: translateY(-3rem);
             transition-delay: 0s, 0s, 0.3s;
         }
-
 
     </style>
 
@@ -52,20 +64,20 @@
        <div class="top-menu">
         
         <ul class="main-menu-box">
-            <li>
-                <a id="menu" href="#"><i class="fas fa-bars fa-2x"></i></a>
-                <ul class="sub-menu-box">
-                    <li><a href="#">서울시</a></li>
-                    <li><a href="#">경기도</a></li>
-                    <li><a href="#">강원도</a></li>
-                    <li><a href="#">충청남도</a></li>
-                    <li><a href="#">충청북도</a></li>
-                    <li><a href="#">전라남도</a></li>
-                    <li><a href="#">전라북도</a></li>
-                    <li><a href="#">경상남도</a></li>
-                    <li><a href="#">경상북도</a></li>
-                    <li><a href="#">제주도</a></li>
-                </ul>
+            <li class="drop-main">
+                <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                <ul class="drop-sub">
+                        <li><a href="#">서울특별시</a></li>
+                        <li><a href="#">경기도</a></li>
+                        <li><a href="#">강원도</a></li>
+                        <li><a href="#">충청남도</a></li>
+                        <li><a href="#">충청북도</a></li>
+                        <li><a href="#">전라남도</a></li>
+                        <li><a href="#">전라북도</a></li>
+                        <li><a href="#">경상남도</a></li>
+                        <li><a href="#">경상북도</a></li>
+                        <li><a href="#">제주도</a></li>
+                    </ul>
             </li>
         </ul>
         <a id="login" href="#"><i class="fas fa-sign-in-alt fa-2x"></i></a>
