@@ -159,6 +159,7 @@
 .comment-sub-box{
     width: 90%;
     display: flex;
+    align-items: center;
 }
 
 .comment-sub-box-title{
